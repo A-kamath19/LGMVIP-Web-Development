@@ -1,0 +1,50 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+.header {
+  display: flex;
+  align-items: center;
+  font-family: "Algerian", serif;
+  justify-content: space-between;
+  background: #8a2be2;
+  box-shadow: 0 10px 10px grey;
+  padding: 30px;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 25px;
+  color: black;
+}
+
+.logo:hover {
+  text-shadow: 5px 5px 5px;
+}
+button {
+  background: #e9967a;
+  font-family: "Times New Roman", serif;
+  font-weight: bold;
+  font-size: 20px;
+  border: 1px #cdb599ff;
+  border-radius: 5px;
+  padding: 0.6rem 1.5rem;
+  margin-right: 10px;
+  color: black;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+button:hover {
+  color: #8a2be2;
+  background: rgb(224, 191, 182);
+  box-shadow: 0 10px 10px grey;
+}
+@media only screen and (max-width: 414px) {
+  header .logo {
+    font-size: 1.2rem;
+  }
+  button {
+    padding: 0.4rem 1rem;
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+
+a {
+  text-decoration: none;
+}
+.cardmain {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 30px;
+  padding: 2rem 8rem;
+  background-image: url("https://cdn.pixabay.com/photo/2020/01/11/09/30/abstract-background-4756987_1280.jpg");
+}
+
+@media (max-width: 786px) {
+  .cardmain {
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 25px;
+  }
+}
+
+.card {
+  width: 80%;
+  height: 100%;
+  border-radius: 15px;
+  box-shadow: 0 5px 10px rgba(28, 42, 241, 0.3);
+  background: #fff;
+}
+.card:hover {
+  box-shadow: 3px 7px 20px black;
+  transform: scale(1.03);
+}
+.avatar {
+  width: 100%;
+  height: 65%;
+  border-radius: 10px 10px 5px 5px;
+}
+.card-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card-text h2 {
+  position: relative;
+  font-weight: bold;
+  font-family: "Times New Roman", serif;
+  font-size: 25px;
+  color: black;
+  margin: 5px 0 0 0;
+}
+.card-text p {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Times New Roman", serif;
+  margin: 10px;
+  color: #474748;
+}
+
+.card-text p:hover {
+  background-position: right center;
+  text-shadow: 1px 1px black;
+}
+
+@media only screen and (max-width: 414px) {
+  .cardmain {
+    padding: 2rem;
+  }
+  .card {
+    width: 100%;
+  }
+}
